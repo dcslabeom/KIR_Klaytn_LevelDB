@@ -23,10 +23,10 @@ disableROIfNeeded() method disables reducing overlapping (RO) across SST files i
 
 ```go
     // from line 196
-		go db.monitoring()
-		go db.delayCompactionIfNeeded()
-		go db.disableParallelCompactionIfNeeded()
-		go db.disableROIfNeeded()
+    go db.monitoring()
+    go db.delayCompactionIfNeeded()
+    go db.disableParallelCompactionIfNeeded()
+    go db.disableROIfNeeded()
 ```
 
 ## /leveldb/session_compaction.go
