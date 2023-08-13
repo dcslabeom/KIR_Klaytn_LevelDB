@@ -365,6 +365,7 @@ func (c *compaction) expand_RO() {
 	}
 	if len(t1mod) > 0 {
 		t1 = t1mod
+		vt1 = vt1mod
 		c.targetLevel = newTargetLevel - 1
 	}
 	// Get entire range covered by compaction.
